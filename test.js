@@ -7,6 +7,8 @@ http.get("http://it2wi1.if-lab.de/rest/ft_ablauf", (res) => {
     let error;
     //200 = success
 
+    // TEST über VSC
+
     if(statusCode !== 200) {
         error = new Error("Request Failed.\n" + "Status Code: ${statusCode}");
     } else if (!/^application\/json/.test(contentType)) {
